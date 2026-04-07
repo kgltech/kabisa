@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Kabisa Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .page-header { background: var(--deep-blue); color: var(--white); padding: 120px 0 60px; text-align: center; }
+        .page-header h2 { color: var(--soft-gold); font-size: 3rem; margin-bottom: 20px; }
+        .menu-section { padding: 80px 0; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 40px; }
+        .menu-item { background: var(--white); padding: 20px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .menu-item-img { width: 100%; height: 250px; object-fit: cover; border-radius: 6px; margin-bottom: 20px; }
+        .menu-item h3 { display: flex; justify-content: space-between; font-size: 1.5rem; color: var(--rich-red); margin-bottom: 10px; }
+        .menu-item .price { color: var(--warm-orange); font-family: 'Montserrat', sans-serif; font-weight: 600; }
+        .menu-item p { color: #555; font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Kabisa.</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="menu.html" class="btn-primary">Order Now</a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <p>Sourced globally, roasted locally. Discover the true taste of luxury.</p>
+        </div>
+    </div>
+
+    <section class="menu-section container">
+        <div class="menu-grid">
+            <div img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&q=80" alt="Espresso" class="menu-item-img">
+                <h3><span>Espresso</span> <span class="price">RWF 2,500</span></h3>
+                <p>Pure, intense, and rich single shot of our house blend.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&q=80" alt="Macchiato" class="menu-item-img">
+                <h3><span>Macchiato</span> <span class="price">RWF 3,000</span></h3>
+                <p>Espresso marked with a dollop of steamed milk.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" alt="Cappuccino" class="menu-item-img">
+                <h3><span>Cappuccino</span> <span class="price">RWF 3,500</span></h3>
+                <p>Perfectly balanced espresso, steamed milk, and thick foam.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1461023058943-07cb1ce911f4?auto=format&fit=crop&w=600&q=80" alt="Kigali Gold Latte" class="menu-item-img">
+                <h3><span>Kigali Gold Latte</span> <span class="price">RWF 4,500</span></h3>
+                <p>Our signature latte infused with local vanilla and a hint of cinnamon.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Kabisa Coffee Shop</h4>
+                    <p>Gisement, Kigali, Rwanda</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Kabisa Coffee Shop. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    </section>
+</body>
+</html>
